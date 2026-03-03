@@ -21,5 +21,30 @@ namespace GithubCSharp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAdic_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblCachorro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

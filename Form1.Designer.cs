@@ -28,93 +28,203 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnLim = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.btnSol = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.btnAdic = new System.Windows.Forms.Button();
+            this.btnSubt = new System.Windows.Forms.Button();
+            this.btnDiv = new System.Windows.Forms.Button();
+            this.btnMult = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblOper = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblSol = new System.Windows.Forms.Label();
+            this.lblCachorro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // btnLim
             // 
-            this.button2.Location = new System.Drawing.Point(571, 27);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 66);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(642, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(571, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 66);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(571, 284);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 66);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "button1";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(571, 356);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 66);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "button1";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnLim.Location = new System.Drawing.Point(13, 271);
+            this.btnLim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(157, 88);
+            this.btnLim.TabIndex = 0;
+            this.btnLim.Text = "Limpar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(754, 3);
+            this.button6.Location = new System.Drawing.Point(1131, 5);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(34, 20);
+            this.button6.Size = new System.Drawing.Size(51, 31);
             this.button6.TabIndex = 0;
             this.button6.Text = "button1";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // btnSol
+            // 
+            this.btnSol.Location = new System.Drawing.Point(279, 271);
+            this.btnSol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSol.Name = "btnSol";
+            this.btnSol.Size = new System.Drawing.Size(157, 88);
+            this.btnSol.TabIndex = 0;
+            this.btnSol.Text = "Solução";
+            this.btnSol.UseVisualStyleBackColor = true;
+            this.btnSol.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Location = new System.Drawing.Point(552, 271);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(157, 88);
+            this.btnFechar.TabIndex = 0;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnAdic
+            // 
+            this.btnAdic.Location = new System.Drawing.Point(552, 35);
+            this.btnAdic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdic.Name = "btnAdic";
+            this.btnAdic.Size = new System.Drawing.Size(157, 49);
+            this.btnAdic.TabIndex = 0;
+            this.btnAdic.Text = "Adição";
+            this.btnAdic.UseVisualStyleBackColor = true;
+            this.btnAdic.Click += new System.EventHandler(this.btnAdic_Click);
+            // 
+            // btnSubt
+            // 
+            this.btnSubt.Location = new System.Drawing.Point(552, 94);
+            this.btnSubt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSubt.Name = "btnSubt";
+            this.btnSubt.Size = new System.Drawing.Size(157, 49);
+            this.btnSubt.TabIndex = 0;
+            this.btnSubt.Text = "Subtração";
+            this.btnSubt.UseVisualStyleBackColor = true;
+            // 
+            // btnDiv
+            // 
+            this.btnDiv.Location = new System.Drawing.Point(552, 212);
+            this.btnDiv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDiv.Name = "btnDiv";
+            this.btnDiv.Size = new System.Drawing.Size(157, 49);
+            this.btnDiv.TabIndex = 0;
+            this.btnDiv.Text = "Divisão";
+            this.btnDiv.UseVisualStyleBackColor = true;
+            // 
+            // btnMult
+            // 
+            this.btnMult.Location = new System.Drawing.Point(552, 153);
+            this.btnMult.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMult.Name = "btnMult";
+            this.btnMult.Size = new System.Drawing.Size(157, 49);
+            this.btnMult.TabIndex = 0;
+            this.btnMult.Text = "Multiplicação";
+            this.btnMult.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(250, 88);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(204, 26);
+            this.textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(250, 141);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(204, 26);
+            this.textBox2.TabIndex = 1;
+            // 
+            // lblOper
+            // 
+            this.lblOper.AutoSize = true;
+            this.lblOper.Location = new System.Drawing.Point(199, 123);
+            this.lblOper.Name = "lblOper";
+            this.lblOper.Size = new System.Drawing.Size(18, 20);
+            this.lblOper.TabIndex = 2;
+            this.lblOper.Text = "?";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label2.Location = new System.Drawing.Point(216, 182);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(270, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "_____________________________";
+            // 
+            // lblSol
+            // 
+            this.lblSol.AutoSize = true;
+            this.lblSol.Location = new System.Drawing.Point(341, 226);
+            this.lblSol.Name = "lblSol";
+            this.lblSol.Size = new System.Drawing.Size(18, 20);
+            this.lblSol.TabIndex = 2;
+            this.lblSol.Text = "?";
+            // 
+            // lblCachorro
+            // 
+            this.lblCachorro.AutoSize = true;
+            this.lblCachorro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCachorro.Location = new System.Drawing.Point(245, 9);
+            this.lblCachorro.Name = "lblCachorro";
+            this.lblCachorro.Size = new System.Drawing.Size(209, 40);
+            this.lblCachorro.TabIndex = 3;
+            this.lblCachorro.Text = "Calculadora";
+            this.lblCachorro.Click += new System.EventHandler(this.lblCachorro_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(723, 373);
+            this.Controls.Add(this.lblCachorro);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblSol);
+            this.Controls.Add(this.lblOper);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnMult);
+            this.Controls.Add(this.btnDiv);
+            this.Controls.Add(this.btnSubt);
+            this.Controls.Add(this.btnAdic);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.btnSol);
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button2);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLim;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSol;
+        private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.Button btnAdic;
+        private System.Windows.Forms.Button btnSubt;
+        private System.Windows.Forms.Button btnDiv;
+        private System.Windows.Forms.Button btnMult;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblOper;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSol;
+        private System.Windows.Forms.Label lblCachorro;
     }
 }
 
