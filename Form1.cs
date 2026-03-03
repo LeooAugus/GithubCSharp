@@ -24,6 +24,16 @@ namespace GithubCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double a = double.Parse(txtNum1.Text);
+                double b = double.Parse(txtNum2.Text);
+
+            }
+            catch (FormatException) 
+            {
+                MessageBox.Show("Valor inválido.");
+            }
 
         }
 
