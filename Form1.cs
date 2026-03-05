@@ -30,7 +30,7 @@ namespace GithubCSharp
                 double b = double.Parse(txtNum2.Text);
                 double result;
 
-                if (lblOper.Text == "+") 
+                if (lblOper.Text == "+")
                 {
                     result = a + b;
                     lblSol.Text = result.ToString();
@@ -112,32 +112,72 @@ namespace GithubCSharp
 
         private void btnParImpar_Click(object sender, EventArgs e)
         {
-            double num1 = double.Parse(txtNum1.Text);
-            double num2 = double.Parse(txtNum2.Text);
-
-            if (num1 % 2 == 0)
+            try
             {
-                MessageBox.Show($"{num1} é par.");
-                if (num2 % 2 == 0)
+                double num1 = double.Parse(txtNum1.Text);
+                double num2 = double.Parse(txtNum2.Text);
+                double result;
+
+                if (lblOper.Text == "+")
                 {
-                    MessageBox.Show($"{num2} é par.");
+                    result = num1 + num2;
+                    lblSol.Text = result.ToString();
+                    if (result % 2 == 0)
+                    {
+                        MessageBox.Show($"{result} é par.");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"{result} é ímpar.");
+                    }
                 }
-                else
+                else if (lblOper.Text == "-")
                 {
-                    MessageBox.Show($"{num2} é ímpar.");
+                    result = num1 - num2;
+                    lblSol.Text = result.ToString();
+                    if (result % 2 == 0)
+                    {
+                        MessageBox.Show($"{result} é par.");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"{result} é ímpar.");
+                    }
+                }
+                else if (lblOper.Text == "*")
+                {
+                    result = num1 * num2;
+                    lblSol.Text = result.ToString();
+                    if (result % 2 == 0)
+                    {
+                        MessageBox.Show($"{result} é par.");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"{result} é ímpar.");
+                    }
+                }
+                else if (lblOper.Text == "/")
+                {
+                    result = num1 / num2;
+                    lblSol.Text = result.ToString();
+                    if (result % 2 == 0)
+                    {
+                        MessageBox.Show($"{result} é par.");
+                    }
+                    else
+                    {
+                        MessageBox.Show($"{result} é ímpar.");
+                    }
                 }
             }
-            else
+            catch (FormatException)
             {
-                MessageBox.Show($"{num1} é ímpar.");
-                if (num2 % 2 == 0)
-                {
-                    MessageBox.Show($"{num2} é par.");
-                }
-                else
-                {
-                    MessageBox.Show($"{num2} é ímpar.");
-                }
+                MessageBox.Show("Valor inválido.");
+            }
+            catch (DivideByZeroException)
+            {
+                MessageBox.Show("Não é possível dividir por zero.");
             }
         }
     }
